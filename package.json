@@ -23,7 +23,7 @@
     "build": "unbuild",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "pre-release": "pnpm build && changelogen --release",
+    "pre": "pnpm build && changelogen --release",
     "nc": "node ./bin/nc.mjs"
   },
   "devDependencies": {

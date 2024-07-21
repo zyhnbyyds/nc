@@ -1,7 +1,6 @@
 {
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@8.15.9",
   "scripts": {
     "build": "nuxi build",
     "dev": "nuxi dev --port 3002",
@@ -13,7 +12,6 @@
     "postinstall": "nuxi prepare",
     "generate": "nuxi generate",
     "start:generate": "npx serve .output/public",
-    "prepare": "husky install",
     "nc": "node ./bin/nc.mjs"
   },
   "devDependencies": {
@@ -30,19 +28,11 @@
     "consola": "^3.2.3",
     "eslint": "^9.7.0",
     "eslint-plugin-format": "^0.1.2",
-    "husky": "^9.1.1",
-    "lint-staged": "^15.2.7",
     "nuxt": "^3.12.4",
     "nuxt-mongoose": "^1.0.6",
     "pinia": "^2.1.7",
     "typescript": "^5.5.3",
     "vitest": "^2.0.3",
     "vue-tsc": "^2.0.26"
-  },
-  "lint-staged": {
-    "*.{ts,js,vue}": [
-      "vitest related --run",
-      "eslint --fix"
-    ]
   }
 }
