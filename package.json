@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "description": "nuxt cli to create code template",
   "author": "zyhnbyyds",
-  "license": "ISC",
+  "license": "MIT",
   "keywords": [],
   "exports": {
     ".": {
@@ -24,7 +24,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "pre-release": "pnpm build && changelogen --release",
-    "dev": "node ./bin/nc.mjs nc --g hhh"
+    "nc": "node ./bin/nc.mjs"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.23.1",
